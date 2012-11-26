@@ -61,6 +61,20 @@
             android:title="@string/battery_light_title"
             android:fragment="com.android.settings.notificationlight.BatteryLightSettings" />
 
+        <ListPreference
+            android:key="hdmi_resolution"
+            android:title="@string/hdmi_resolution_title"
+            android:persistent="false"
+            android:entries="@array/hdmi_resolution_entries"
+            android:entryValues="@array/hdmi_resolution_values" />
+
+        <ListPreference
+            android:key="accelerometer_coordinate"
+            android:title="@string/accelerometer_coordinate_title"
+            android:persistent="false"
+            android:entries="@array/accelerometer_entries"
+            android:entryValues="@array/accelerometer_values" />
+
 <!-- Remove until merged from CM9
         <PreferenceCategory
             android:key="category_animation_options"
