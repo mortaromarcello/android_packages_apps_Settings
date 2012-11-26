@@ -215,7 +215,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             getPreferenceScreen().removePreference((PreferenceCategory) findPreference(KEY_ELECTRON_BEAM_CATEGORY_ANIMATION));
         }
 */
-
         mVolumeWake = (CheckBoxPreference) findPreference(KEY_VOLUME_WAKE);
         if (mVolumeWake != null) {
             if (!getResources().getBoolean(R.bool.config_show_volumeRockerWake)) {
@@ -412,6 +411,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         updateAccelerometerRotationCheckbox();
         updateScreenSaverSummary();
     }
+
     private void updateScreenSaverSummary() {
         mScreenSaverPreference.setSummary(
             DreamSettings.isScreenSaverEnabled(mScreenSaverPreference.getContext())
@@ -475,6 +475,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         if (KEY_FONT_SIZE.equals(key)) {
             writeFontSizePreference(objValue);
         }
+
 	if (KEY_HDMI_RESOLUTION.equals(key))
         {
             String value = String.valueOf(objValue);
