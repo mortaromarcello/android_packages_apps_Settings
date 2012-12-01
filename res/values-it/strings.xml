@@ -2325,5 +2325,6 @@
     <string name="gestures_action_menu">Emula tasto Menu</string>
     <string name="gestures_action_search">Avvia ricerca</string>
     <string name="gestures_action_recent">Applicazioni recenti</string>
+    <string name="hdmi_resolution_title">Risoluzione HDMI</string>
 </resources>
 
