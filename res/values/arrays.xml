@@ -757,7 +757,7 @@
         <item>1</item>
     </string-array>
 
-    <string-array name="hdmi_resolution_entries">
+    <string-array name="hdmi_resolution_entries" translatable="false">
         <item>Auto</item>
         <item>1080p 60hz</item>
 		<item>1080p 50hz</item>
@@ -765,7 +765,7 @@
 		<item>720p 50hz</item>
     </string-array>
 
-    <string-array name="hdmi_resolution_values">
+    <string-array name="hdmi_resolution_values" translatable="false">
         <item>auto</item>
         <item>1080_60</item>
 		<item>1080_50</item>
