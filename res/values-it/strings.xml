@@ -16,6 +16,41 @@
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Strings for BCM Mounts2SD Menu -->
+    <string name="m2sd_management_title">Gestione Mounts2SD</string>
+    <string name="m2sd_management_summary">Personalizza lo script build-in sd-ext</string>
+    <string name="m2sd_switch_title">Abilitato</string>
+    <string name="m2sd_switch_summary">Attenzione! In stato disabilitato, i contenuti già trasferiti in sd-ext non possono essere spostati. Prima disabilita tutte le opzioni m2sd, e dopo riavvia per disabilitare questa opzione.</string>
+    <string name="m2sd_content_category_title">Sposta Contenuti</string>
+    <string name="m2sd_apps_switch_title">Applicazioni</string>
+    <string name="m2sd_apps_switch_summary">Sposta tutti i file APK nella partizione sd-ext</string>
+    <string name="m2sd_data_switch_title">Dati delle Applicazioni</string>
+    <string name="m2sd_data_switch_summary">Sposta tutti i contenuti relativi ai dati delle applicazioni nella partizione sd-ext</string>
+    <string name="m2sd_dalvik_switch_title">Dalvik Cache</string>
+    <string name="m2sd_dalvik_switch_summary">Sposta la cache Dalvik nella partizione sd-ext</string>
+    <string name="m2sd_cache_category_title">Impostazioni della Cache</string>
+    <string name="m2sd_cache_switch_title">Cache</string>
+    <string name="m2sd_cache_switch_summary">Sposta la cache in un file di sistema temporaneo. Selezionando auto la cache viene spostata solo quando quella interna è di troppo piccola</string>
+    <string name="m2sd_cache_download_switch_title">Cache di Scaricamento</string>
+    <string name="m2sd_cache_download_switch_summary">Sposta solo la cache di scaricamento in un file di sistema temporaneo</string>
+    <string name="m2sd_memory_category_title">Impostazioni della Memoria</string>
+    <string name="m2sd_swap_switch_title">SWAP</string>
+    <string name="m2sd_swap_switch_summary">Attiva la partizione di SWAP all\'avvio</string>
+    <string name="m2sd_sdcard_category_title">Impostazioni della Partizione</string>
+    <string name="m2sd_journal_switch_title">Utilizza il Journal</string>
+    <string name="m2sd_journal_switch_summary">Disable/Enable journal on sd-ext ext3 and ext4 file system</string>
+    <string name="m2sd_readahead_value_title">Readahead</string>
+    <string name="m2sd_readahead_value_summary">Il valore readahead per la sdcard. Si noti che questo influenzerà anche la partizione fat32</string>
+    <string name="m2sd_extfs_value_title">Tipo di file system</string>
+    <string name="m2sd_extfs_value_summary">Quale tipo di file system viene usato per montare la partizione sd-ext</string>
+    <string name="m2sd_fschk_switch_title">Controllo del file system</string>
+    <string name="m2sd_fschk_switch_summary">Esegue il controllo del file system durante l\'avvio</string>
+    <string name="m2sd_noatime_switch_title">No Atime</string>
+    <string name="m2sd_noatime_switch_summary">Disabilita atime e diratime</string>
+    <string name="m2sd_rmount_switch_title">Montaggio Inverso</string>
+    <string name="m2sd_rmount_switch_summary">Utilizza data come /sd-ext e sd-ext as /data</string>
+
+
     <string name="yes" msgid="4676390750360727396">"Sì"</string>
     <string name="no" msgid="6731231425810196216">"No"</string>
     <string name="create" msgid="3578857613172647409">"Crea"</string>

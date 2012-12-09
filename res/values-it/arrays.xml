@@ -20,6 +20,30 @@
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string-array name="m2sd_state_entries">
+        <item>Auto</item>
+        <item>Abilita</item>
+        <item>Disabilita</item>
+    </string-array>
+
+    <string-array name="m2sd_extfs_entries">
+        <item>Auto</item>
+        <item>Ext2</item>
+        <item>Ext3</item>
+        <item>Ext4</item>
+    </string-array>
+
+    <string-array name="m2sd_readahead_entries">
+        <item>256kb</item>
+        <item>512kb</item>
+        <item>768kb</item>
+        <item>1024kb</item>
+        <item>2048kb</item>
+        <item>4096kb</item>
+    </string-array>
+
+
   <string-array name="timezone_filters">
     <item msgid="5296756001147094692">"America"</item>
     <item msgid="3005562397632768392">"Europa"</item>
