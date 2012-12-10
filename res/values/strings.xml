@@ -48,6 +48,11 @@
     <string name="m2sd_rmount_switch_title">Reversed Mount</string>
     <string name="m2sd_rmount_switch_summary">Use data as /sd-ext and sd-ext as /data</string>
 
+    <!-- strings for Vold Switch External -->
+    <string name="pref_vold_switchexternal_title">Switch memory card</string>
+    <string name="pref_vold_switchexternal_summary">Switches the internal memory card with external (requires reboot)</string>
+    
+
     <!-- Strings for Dialog yes button -->
     <string name="yes">"Yes"</string>
 

@@ -49,10 +49,14 @@ public class PerformanceSettings extends SettingsPreferenceFragment
     private static final String M2SD_MANAGEMENT = "m2sd_management";
     private static final String M2SD_SCRIPT = SystemProperties.get("ro.m2sd.path.script", "/system/etc/init.d/10mounts2sd");
     private static final String M2SD_SDCARD = SystemProperties.get("ro.m2sd.path.sdcard", "/dev/block/mmcblk0");
+    private static final String VOLD_SWITCHEXTERNAL_PREF = "pref_vold_switchexternal";
+    private static final String VOLD_SWITCHEXTERNAL_PROP = "persist.sys.vold.switchexternal";
 
     private ListPreference mUseDitheringPref;
 
     private CheckBoxPreference mUse16bppAlphaPref;
+
+    private CheckBoxPreference mVoldSwitchexternalPref;
 
     private AlertDialog alertDialog;
 
@@ -80,6 +84,11 @@ public class PerformanceSettings extends SettingsPreferenceFragment
             String use16bppAlpha = SystemProperties.get(USE_16BPP_ALPHA_PROP, "0");
             mUse16bppAlphaPref.setChecked("1".equals(use16bppAlpha));
 
+            mVoldSwitchexternalPref = (CheckBoxPreference) prefSet.findPreference(VOLD_SWITCHEXTERNAL_PREF);
+            String voldSwitchexternal = SystemProperties.get(VOLD_SWITCHEXTERNAL_PROP, "0");
+            mVoldSwitchexternalPref.setChecked("1".equals(voldSwitchexternal));
+            
+
             /* Display the warning dialog */
             alertDialog = new AlertDialog.Builder(getActivity()).create();
             alertDialog.setTitle(R.string.performance_settings_warning_title);
@@ -101,12 +110,14 @@ public class PerformanceSettings extends SettingsPreferenceFragment
         if (preference == mUse16bppAlphaPref) {
             SystemProperties.set(USE_16BPP_ALPHA_PROP,
                     mUse16bppAlphaPref.isChecked() ? "1" : "0");
-        } else {
-            // If we didn't handle it, let preferences handle it.
-            return super.onPreferenceTreeClick(preferenceScreen, preference);
+            return true;
+        };
+        if (preference == mVoldSwitchexternalPref) {
+			SystemProperties.set(VOLD_SWITCHEXTERNAL_PROP,
+					mVoldSwitchexternalPref.isChecked() ? "1" : "0");
+			return true;
         }
-
-        return true;
+        return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {

@@ -48,6 +48,11 @@
         android:title="@string/pref_use_16bpp_alpha_title"
         android:summary="@string/pref_use_16bpp_alpha_summary" />
 
+    <CheckBoxPreference
+        android:key="pref_vold_switchexternal"
+        android:title="@string/pref_vold_switchexternal_title"
+        android:summary="@string/pref_vold_switchexternal_summary" />
+
     <ListPreference
         android:key="pref_use_dithering"
         android:persistent="false"

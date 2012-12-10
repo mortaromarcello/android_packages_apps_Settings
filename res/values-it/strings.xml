@@ -50,6 +50,9 @@
     <string name="m2sd_rmount_switch_title">Montaggio Inverso</string>
     <string name="m2sd_rmount_switch_summary">Utilizza data come /sd-ext e sd-ext as /data</string>
 
+    <!-- strings for Vold Switch External -->
+    <string name="pref_vold_switchexternal_title">Commuta la memory card</string>
+    <string name="pref_vold_switchexternal_summary">Commuta la memoria interna con la esterna (richiede il riavvio)</string>
 
     <string name="yes" msgid="4676390750360727396">"Sì"</string>
     <string name="no" msgid="6731231425810196216">"No"</string>
