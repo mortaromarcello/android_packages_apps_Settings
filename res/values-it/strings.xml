@@ -32,7 +32,7 @@
     <string name="m2sd_cache_switch_title">Cache</string>
     <string name="m2sd_cache_switch_summary">Sposta la cache in un file di sistema temporaneo. Selezionando auto la cache viene spostata solo quando quella interna è troppo piccola</string>
     <string name="m2sd_cache_download_switch_title">Cache di Scaricamento</string>
-    <string name="m2sd_cache_download_switch_summary">Sposta solo la cache di scaricamento in un file di sistema temporaneo</string>
+    <string name="m2sd_cache_download_switch_summary">Sposta soltanto la cache di scaricamento in un file di sistema temporaneo</string>
     <string name="m2sd_memory_category_title">Impostazioni della Memoria</string>
     <string name="m2sd_swap_switch_title">SWAP</string>
     <string name="m2sd_swap_switch_summary">Attiva la partizione di SWAP all\'avvio</string>
