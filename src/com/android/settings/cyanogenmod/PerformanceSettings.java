@@ -100,6 +100,11 @@ public class PerformanceSettings extends SettingsPreferenceFragment
                             return;
                         }
                     });
+            alertDialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
+                public void onCancel(DialogInterface dialog) {
+                    PerformanceSettings.this.finish();
+                }
+            });
 
             alertDialog.show();
         }
