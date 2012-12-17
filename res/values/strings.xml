@@ -4125,6 +4125,7 @@
     <string name="additional_system_update_settings_list_item_title">Additional system updates</string>
     
     <string name="hdmi_resolution_title">HDMI resolution</string>
+    <string name="accelerometer_coordinate_title">Accelerometer coordinate system</string>
 
     <!-- User settings -->
     <skip/>

@@ -2367,5 +2367,6 @@
     <string name="gestures_action_search">Avvia ricerca</string>
     <string name="gestures_action_recent">Applicazioni recenti</string>
     <string name="hdmi_resolution_title">Risoluzione HDMI</string>
+    <string name="accelerometer_coordinate_title">Sistema di coordinate dell\'accelerometro</string>
 </resources>
 

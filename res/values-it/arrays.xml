@@ -386,6 +386,7 @@
   <string-array name="location_entries_gps_source">
     <item>"Usa GPS integrato"</item>
   </string-array>
+
   <string-array name="hdmi_resolution_summaries">
     <item>Selezione automatica</item>
     <item>Risoluzione Full HD per NTSC</item>
@@ -393,4 +394,19 @@
     <item>Risoluzione HD-Ready per NTSC</item>
     <item>Risoluzione HD-Ready per PAL</item>
   </string-array>
+
+    <string-array name="accelerometer_entries">
+        <item>Default coordinate system</item>
+        <item>Speciale sistema di coordinate, per supportare alcuni altri giochi.</item>
+    </string-array>
+    
+    <string-array name="accelerometer_values">
+        <item>default</item>
+        <item>special</item>
+    </string-array>
+    
+    <string-array name="accelerometer_summaries">
+        <item>L\'accelerometro utilizza il sistema di coordinate predefinito.</item>
+        <item>L\'accelerometro utilizza uno speciale sistema di coordinate, per alcuni giochi.</item>
+    </string-array>
 </resources>
